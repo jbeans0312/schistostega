@@ -1,0 +1,9 @@
+---
+import * as post from '../../content/blog/Goblin_Gold.md'
+import { Content } from '../../content/blog/Goblin_Gold.md'
+import BlogPost from '../../layouts/BlogPost.astro'
+---
+
+<BlogPost frontmatter={post.frontmatter}>
+    <p><Content/></p>
+</BlogPost>

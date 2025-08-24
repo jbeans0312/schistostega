@@ -1,0 +1,24 @@
+---
+import '../styles/global.css'
+import ContentWrapper from "../components/ContentWrapper.astro";
+import Headline from "../components/Headline.astro";
+
+const { frontmatter } = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
+        <ContentWrapper>
+            <Headline></Headline>
+            <h1>{frontmatter.title}</h1>
+            <slot />
+            <p>Written on: {frontmatter.date}</p>
+        </ContentWrapper>
+	</body>
+</html>

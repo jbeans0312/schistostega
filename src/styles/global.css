@@ -1,0 +1,46 @@
+:root{
+    --background-color: #191A19;
+    --title-color: #1E5128;
+    --highlight-color: #4E9F3D;
+    --text-color: #ffffff;
+}
+
+@font-face{
+    font-family: 'Lamina';
+    src: url('/fonts/Lamina.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maname';
+    src: url('/fonts/Maname-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background-color: var(--background-color)
+}
+
+h1, h2{
+    color: var(--text-color);
+    font-family: 'Lamina';
+}
+
+p, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-family: 'Maname';
+}
+
+
+b, strong {
+    color: var(--highlight-color);
+    font-family: 'Maname';
+}
+
+title {
+    font-family: 'Lamina'
+}

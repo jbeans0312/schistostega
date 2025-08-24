@@ -1,0 +1,17 @@
+---
+import '../styles/global.css';
+
+interface Props {
+    title?: string;
+    subtitle?: string;
+}
+
+const {title = "Schistostega", subtitle} = Astro.props;
+---
+<style>
+    div {te}
+</style>
+<div id="headline">
+    <h1 style="font-family: Lamina">{title}</h1>
+    <h2>{subtitle}</h2>
+</div>
