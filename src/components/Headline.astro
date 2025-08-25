@@ -6,10 +6,29 @@ interface Props {
     subtitle?: string;
 }
 
-const {title = "Schistostega", subtitle} = Astro.props;
+const {title = "SCHISTOSTEGA", subtitle} = Astro.props;
 ---
 <style>
-    div {te}
+    div {text-align: center; margin-bottom: 1px;}
+    h1  {font-size: 8vw;
+        -webkit-text-stroke: 1px; 
+        -webkit-text-stroke-color: var(--title-color);
+        margin-top:0;
+        margin-bottom:0;
+    }  
+    h2 {
+        margin-top: 1px;
+        font-size: 2vw;
+    }
+    /* Medium screens */
+    @media (max-width: 1024px) {h1{font-size: 8vw;}}
+    @media (max-width: 1024px) {h2{font-size: 2.5vw;}}
+    /* Small screens */
+    @media (max-width: 768px) {h1{font-size: 10vw;}}
+    @media (max-width: 768px) {h2{font-size: 3vw;}}
+    /* Very small screens */
+    @media (max-width: 520px) {h1{font-size: 11vw;}}
+    @media (max-width: 520px) {h2{font-size: 3.5vw;}}
 </style>
 <div id="headline">
     <h1 style="font-family: Lamina">{title}</h1>

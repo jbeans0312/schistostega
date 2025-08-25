@@ -1,7 +1,22 @@
 ---
 import '../styles/global.css'
-
+import Headline from '../components/Headline.astro';
+import Navigation from '../components/Navigation.astro';
 ---
+<style>
+	div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100vh;
+	}
+	p {
+		font-family: 'Maname';
+		text-align: center;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+</style>
 
 <html lang="en">
 	<head>
@@ -12,7 +27,9 @@ import '../styles/global.css'
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1 style="font-family: Lamina">Schistostega</h1>
-		<p>Under construction...</p>
+		<div>
+			<Headline subtitle='a collection of ttrpg oddities by john bean'></Headline>
+			<Navigation></Navigation>
+		</div>
 	</body>
 </html>

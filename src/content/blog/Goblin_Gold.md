@@ -9,7 +9,7 @@ Goblins are the quintessential fantasy miscreants, surely they would source thei
 As far as ripening mechanics go, I don't think a transmutation ritual is necessary. Goblins are inherently magical creatures, so in my setting they'll simply exude magic that turns their riches green. The more goblins, the quicker the process. Again, while there isn't a ritual, I think the process would be expedited if the goblins were focusing on transmutation.
 
 | Goblins Focusing on Transmutation | Transmutation Rate (gp/day) |
-| --------------------------------- | --------------------------- |
+| :--------------------------------- | --------------------------- |
 | Solo (1)                          | 2                           |
 | Scouting party (~2-3)             | 10                          |
 | Patrol (~4-10)                    | 50                          |
@@ -22,13 +22,14 @@ Per the above table, the rate of transformation is exponential: a sole goblin wo
 Now all that's left is to mechanically devalue goblin gold, thereby encouraging decisive action to recover the gold before it's green. This is easy enough, goblins imbibe their green gold with their wyrd magic, putting those who covet it at risk for a painful and socially outcasting mutation. In short, cursed green gold is extremely illiquid and more trouble than its worth.
 
 | 1d4 | Goblin Wyrding                                                                                                                                                |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :---: | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | Plague of Gnats. Your skin turns a sickly green and a swarm of gnats materializes  whenever you eat, mingle, and sleep. They can be trained.                  |
 | 2   | Your fingers on your left hand meld together and calcify, transforming your hand into a flat scooped hook.                                                    |
 | 3   | You have an urge to steal from strangers, it causes your skin to itch and crawl. The longer you subdue the urge, the greater the theft must be to satisfy it. |
 | 4   | Cave Creature. You are only able to sleep when underground. 1 in 4 chance to wake somewhere nearby with no memory of how you got there.                       |
+
 With this kind of goblin magic at play, recovering stolen gold becomes a race against time; regents and nobles are willing to spend a good portion of their gold to avoid losing it all, which is where our first adventure begins.
-### Depreciating Assets
+## Depreciating Assets
 
  **Inciting incident:** A tax collector's caravan was ambushed by goblins en route to the regent's keep from a nearby village. A handful of the guard outfit survived, but the strongbox was stolen in all the confusion.
  **Reward:** The crown will pay a tenth of the remaining "clean" gold for the strongbox's return.  

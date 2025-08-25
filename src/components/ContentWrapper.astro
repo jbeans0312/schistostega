@@ -1,8 +1,41 @@
 ---
 import '../styles/global.css';
+import '@fontsource/montserrat'
 ---
 <style>
-    div {border-style: solid; border-color: var(--highlight-color); padding: 5%; border-width: 2px; margin: }
+    div{
+    border-style: solid;
+    border-color: var(--title-color);
+    padding: 10px;
+    padding-top: 2px;
+    border-width: 2px;
+    margin-left: 10em;
+    margin-right: 10em;
+    }
+
+    /* Medium screens */
+    @media (max-width: 1024px) {
+    div {
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+    }
+    }
+
+    /* Small screens */
+    @media (max-width: 768px) {
+    div {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    }
+
+    /* Very small screens */
+    @media (max-width: 520px) {
+    div {
+        margin-left: 0.2em;
+        margin-right: 0.2em;
+    }
+    }
 </style>
 <div id="content-wrapper">
     <slot />

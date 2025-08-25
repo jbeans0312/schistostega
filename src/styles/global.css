@@ -25,22 +25,44 @@ html {
     background-color: var(--background-color)
 }
 
-h1, h2{
+h1 {
     color: var(--text-color);
-    font-family: 'Lamina';
+    font-family: 'Maname';
+    font-size: 36px;
 }
 
-p, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     color: var(--text-color);
     font-family: 'Maname';
 }
 
+p {
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 'Montserrat'
+}
+
+table, th, td {
+    color: var(--text-color);
+    font-family: 'Maname';
+    font-size: 18px;
+    border-width: 1px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    padding-top: 1px;
+}
+
+ul {
+    color: var(--text-color);
+    font-family: 'Maname';
+    font-size: 18px;
+}
 
 b, strong {
     color: var(--highlight-color);
     font-family: 'Maname';
-}
-
-title {
-    font-family: 'Lamina'
 }
