@@ -41,7 +41,8 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     color: var(--text-color);
-    font-family: 'Maname';
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
 p {
@@ -70,7 +71,7 @@ th, td {
 
 ul {
     color: var(--text-color);
-    font-family: 'Maname';
+    font-family: 'Montserrat';
     font-size: 18px;
 }
 
@@ -91,3 +92,8 @@ a:hover {
 }
 
 @media (max-width: 768px) {#blog-post-nav{font-size: 1.17em;}}
+
+#nav-bar-text{
+    font-family: 'Maname';
+    color: var(--text-color);
+}

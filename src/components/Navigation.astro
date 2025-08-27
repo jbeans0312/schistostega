@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css'
+import { getCollection } from 'astro:content'
+const blogPosts = (await getCollection('blog')).sort((a,b) => a.data.date.valueOf() - b.data.date.valueOf());
+const adventuresPosts = (await getCollection('adventures')).sort((a,b) => a.data.date.valueOf() - b.data.date.valueOf());
 ---
 <style>
     div {
@@ -37,7 +40,7 @@ import '../styles/global.css'
     @media (max-width: 520px) {h2{font-size: 5vw;}}
 </style>
 <div id="navbar">
-    <h2><a href="/blog/"><span>V </span>blog</a></h2>
-    <h2><a href="/adventures/"><span>N </span>adventures</a></h2>
+    <h2><a href="/blog/"><span>V </span>blog ({blogPosts.length})</a></h2>
+    <h2><a href="/adventures/"><span>N </span>adventures ({adventuresPosts.length})</a></h2>
     <h2><a href="/contact/"><span>L </span>contact</a></h2>
 </div>

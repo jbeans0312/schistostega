@@ -4,8 +4,7 @@ import ContentWrapper from "../components/ContentWrapper.astro";
 import Headline from "../components/Headline.astro";
 import { getCollection } from 'astro:content'
 import SmallNavigation from '../components/SmallNavigation.astro';
-
-const posts = (await getCollection('adventures')).sort((a,b) => a.data.date.valueOf() - b.data.date.valueOf());
+import EntriesPage from '../layouts/EntriesPage.astro';
 ---
 <style>
 	h1 {
@@ -21,17 +20,10 @@ const posts = (await getCollection('adventures')).sort((a,b) => a.data.date.valu
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
-		<Headline title={"ADVENTURES"}></Headline>
-		<SmallNavigation page="adventures" showBack={false} showHome showBlog showContact></SmallNavigation>
-        <ContentWrapper>
-			{ posts.length > 0 ?
-				posts.map(post => (
-					<div id={post.id}>
-						<h1><a href={`/blog/${post.id}`}>{post.data.title}</a></h1>
-						<strong>{post.data.date.toLocaleDateString()}</strong>
-					</div>
-				)) : <p>nothing to see</p>
-			}
-        </ContentWrapper>
+		<Headline title={"CONTACT"}></Headline>
+		<SmallNavigation page="contact" showBack={false} showHome showAdventures showBlog></SmallNavigation>
+		<ContentWrapper>
+			<p>it's me!</p>
+		</ContentWrapper>
 	</body>
 </html>

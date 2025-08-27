@@ -10,9 +10,21 @@ const blog = defineCollection({
     schema: z.object({
         title: z.string(),
         date: z.coerce.date(),
-        relatedPosts: z.array(reference('blog')).optional()
+        relatedPosts: z.array(reference('blog')).optional(),
+        relatedAdventures: z.array(reference('adventures')).optional()
     })
 });
 
+const adventures = defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/adventures/"}),
+    schema: z.object({
+        title: z.string(),
+        date: z.coerce.date(),
+        relatedPosts: z.array(reference('blog')).optional(),
+        relatedAdventures: z.array(reference('adventures')).optional()
+    })
+});
+
+
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { blog };
+export const collections = { blog, adventures };
