@@ -7,27 +7,37 @@ import '../styles/global.css'
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         margin-top: 0px;
         padding-top: 1px;
     }
-    p {
-        margin-left: 10px;
-        margin-right: 10px;
+    h2 {
+        margin-left: 50px;
+        margin-right: 50px;
     }
     h1  {font-size: 4vw;
         font-family: "Black Record";
         margin-top:0;
         margin-bottom:0;
     }  
+    span {
+        font-family: 'Chapbook';
+    }
     /* Medium screens */
     @media (max-width: 1024px) {h1{font-size: 4vw;}}
     /* Small screens */
     @media (max-width: 768px) {h1{font-size: 6vw;}}
     /* Very small screens */
     @media (max-width: 520px) {h1{font-size: 8vw;}}
+    /* Medium screens */
+    @media (max-width: 1024px) {h2{font-size: 3vw;}}
+    /* Small screens */
+    @media (max-width: 768px) {h2{font-size: 3.5vw;}}
+    /* Very small screens */
+    @media (max-width: 520px) {h2{font-size: 5vw;}}
 </style>
 <div id="navbar">
-    <p>blog</p>
-    <p>adventures</p>
-    <p>contact</p>
+    <h2><a href="/blog/"><span>V </span>blog</a></h2>
+    <h2><a href="/adventures/"><span>N </span>adventures</a></h2>
+    <h2><a href="/contact/"><span>L </span>contact</a></h2>
 </div>

@@ -1,8 +1,7 @@
 ---
 import '../styles/global.css'
 import ContentWrapper from "../components/ContentWrapper.astro";
-import Headline from "../components/Headline.astro";
-
+import SmallPostNavigation from '../components/SmallNavigation.astro';
 const { frontmatter } = Astro.props;
 ---
 <html lang="en">
@@ -15,7 +14,11 @@ const { frontmatter } = Astro.props;
 	</head>
 	<body>
         <ContentWrapper>
-            <h1>{frontmatter.title}</h1>
+			<div style="display: flex; flex-direction: row; justify-content: space-between; 
+			margin-top: 0px; align-items: center;">
+				<h1>{frontmatter.title}</h1>
+				<SmallPostNavigation page="b-post" showHome></SmallPostNavigation>
+			</div>
             <slot />
             <p>Written on: {frontmatter.date}</p>
         </ContentWrapper>

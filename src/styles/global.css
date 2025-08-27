@@ -21,6 +21,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Chapbook';
+    src: url('/fonts/chapbook.dingbats.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
     background-color: var(--background-color)
 }
@@ -40,6 +48,10 @@ p {
     color: var(--text-color);
     font-size: 20px;
     font-family: 'Montserrat'
+}
+
+table {
+    margin-inline: auto;
 }
 
 table, th, td {
@@ -63,6 +75,19 @@ ul {
 }
 
 b, strong {
-    color: var(--highlight-color);
+    color: var(--text-color);
     font-family: 'Maname';
 }
+
+a:link, a:visited {
+    color: var(--text-color);
+    text-decoration: none;
+    font-style: oblique;
+}
+
+a:hover {
+    color: var(--highlight-color);
+    text-decoration: wavy;
+}
+
+@media (max-width: 768px) {#blog-post-nav{font-size: 1.17em;}}

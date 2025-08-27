@@ -4,7 +4,7 @@ import ContentWrapper from "../components/ContentWrapper.astro";
 import Headline from "../components/Headline.astro";
 import { getCollection } from 'astro:content'
 import SmallNavigation from '../components/SmallNavigation.astro';
-import EntriesPage from '../layouts/EntriesPage.astro';
+
 const posts = (await getCollection('blog')).sort((a,b) => a.data.date.valueOf() - b.data.date.valueOf());
 ---
 <style>
@@ -21,9 +21,9 @@ const posts = (await getCollection('blog')).sort((a,b) => a.data.date.valueOf() 
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
-		<Headline title={"BLOG"}></Headline>
-		<SmallNavigation page="blog" showBack={false} showHome showAdventures showContact></SmallNavigation>
-		<ContentWrapper>
+		<Headline title={"ADVENTURES"}></Headline>
+		<SmallNavigation page="adventures" showBack={false} showHome showBlog showContact></SmallNavigation>
+        <ContentWrapper>
 			{
 				posts.map(post => (
 					<div id={post.id}>
@@ -32,6 +32,6 @@ const posts = (await getCollection('blog')).sort((a,b) => a.data.date.valueOf() 
 					</div>
 				))
 			}
-		</ContentWrapper>
+        </ContentWrapper>
 	</body>
 </html>
