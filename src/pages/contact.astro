@@ -1,10 +1,12 @@
 ---
 import '../styles/global.css'
-import ContentWrapper from "../components/ContentWrapper.astro";
+import Head from '../components/Head.astro';
 import Headline from "../components/Headline.astro";
-import { getCollection } from 'astro:content'
-import SmallNavigation from '../components/SmallNavigation.astro';
 import EntriesPage from '../layouts/EntriesPage.astro';
+import ContentWrapper from "../components/ContentWrapper.astro";
+import SmallNavigation from '../components/SmallNavigation.astro';
+
+import { getCollection } from 'astro:content'
 ---
 <style>
 	h1 {
@@ -13,12 +15,7 @@ import EntriesPage from '../layouts/EntriesPage.astro';
 	}
 </style>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-	</head>
+<Head title="contact"></Head>
 	<body>
 		<Headline title={"CONTACT"}></Headline>
 		<SmallNavigation page="contact" showBack={false} showHome showAdventures showBlog></SmallNavigation>

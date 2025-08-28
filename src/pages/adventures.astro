@@ -1,9 +1,10 @@
 ---
 import '../styles/global.css'
-import ContentWrapper from "../components/ContentWrapper.astro";
+import Head from '../components/Head.astro';
 import Headline from "../components/Headline.astro";
-import { getCollection } from 'astro:content'
+import ContentWrapper from "../components/ContentWrapper.astro";
 import SmallNavigation from '../components/SmallNavigation.astro';
+import { getCollection } from 'astro:content'
 
 const posts = (await getCollection('adventures')).sort((a,b) => a.data.date.valueOf() - b.data.date.valueOf());
 ---
@@ -14,12 +15,7 @@ const posts = (await getCollection('adventures')).sort((a,b) => a.data.date.valu
 	}
 </style>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-	</head>
+<Head title="adventures"></Head>
 	<body>
 		<Headline title={"ADVENTURES"}></Headline>
 		<SmallNavigation page="adventures" showBack={false} showHome showBlog showContact></SmallNavigation>

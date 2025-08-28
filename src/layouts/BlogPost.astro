@@ -1,17 +1,12 @@
 ---
 import '../styles/global.css'
+import Head from '../components/Head.astro';
 import ContentWrapper from "../components/ContentWrapper.astro";
 import SmallPostNavigation from '../components/SmallNavigation.astro';
 const { frontmatter } = Astro.props;
 ---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{frontmatter.title}</title>
-	</head>
+<Head title={frontmatter.title}></Head>
 	<body>
         <ContentWrapper>
 			<div style="display: flex; flex-direction: row; justify-content: space-between; 

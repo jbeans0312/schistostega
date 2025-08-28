@@ -7,7 +7,7 @@
 
 @font-face{
     font-family: 'Lamina';
-    src: url('/fonts/Lamina.otf') format('opentype');
+    src: url('/schistostega/fonts/Lamina.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'Maname';
-    src: url('/fonts/Maname-Regular.woff2') format('woff');
+    src: url('/schistostega/fonts/Maname-Regular.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: 'Chapbook';
-    src: url('/fonts/chapbook.dingbats.otf') format('opentype');
+    src: url('/schistostega/fonts/chapbook.dingbats.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
