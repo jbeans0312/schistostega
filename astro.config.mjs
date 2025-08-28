@@ -3,5 +3,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'http://www.schistostega.com/',
+    site: 'https://www.schistostega.com/',
 });
