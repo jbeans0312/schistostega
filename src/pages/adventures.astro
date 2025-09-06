@@ -26,7 +26,7 @@ const posts = (await getCollection('adventures')).sort((a,b) => a.data.date.valu
 						<h1><a href={`/blog/${post.id}`}>{post.data.title}</a></h1>
 						<strong>{post.data.date.toLocaleDateString()}</strong>
 					</div>
-				)) : <p>nothing to see</p>
+				)) : <p>soon</p>
 			}
         </ContentWrapper>
 	</body>

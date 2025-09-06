@@ -7,7 +7,7 @@ import ContentWrapper from "../components/ContentWrapper.astro";
 import SmallNavigation from '../components/SmallNavigation.astro';
 import { getCollection } from 'astro:content'
 
-const posts = (await getCollection('blog')).sort((a,b) => a.data.date.valueOf() - b.data.date.valueOf());
+const posts = (await getCollection('blog')).sort((b,a) => a.data.date.valueOf() - b.data.date.valueOf());
 ---
 <style>
 	h1 {
