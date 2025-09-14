@@ -12,7 +12,7 @@ const { frontmatter } = Astro.props;
 			<div style="display: flex; flex-direction: row; justify-content: space-between; 
 			margin-top: 0px; align-items: center;">
 				<h1>{frontmatter.title}</h1>
-				<SmallPostNavigation page="b-post" showHome></SmallPostNavigation>
+				<SmallPostNavigation page="b-post" showBack showHome></SmallPostNavigation>
 			</div>
             <slot />
             <p>published to SCHISTOSTEGA on: {frontmatter.date}</p>
