@@ -1,6 +1,7 @@
 ---
 title: "Goblin Gold"
 date: 08-26-2025
+tags: ["homebrew", "goblins"]
 ---
 Schistostega is a luminous green moss that grows in caves. The elusive moss is also known as "dragon's gold" or *"goblin's gold"* since it can easily be mistaken for loose emeralds strewn across the cave floor or veins of sickly gold climbing up its walls. As much as I like the idea of glowing green moss, I think I like the idea of green goblin gold even more--so let's explore! From now on, my goblins have green gold.
 
@@ -30,28 +31,29 @@ Now all that's left is to mechanically devalue goblin gold, thereby encouraging 
 
 With this kind of goblin magic at play, recovering stolen gold becomes a race against time; regents and nobles are willing to spend a good portion of their gold to avoid losing it all, which is where our first adventure begins.
 
-## Depreciating Assets
+---
+# Depreciating Assets
 
  **Inciting incident:** A tax collector's caravan was ambushed by goblins en route to the regent's keep from a nearby village. A handful of the guard outfit survived, but the strongbox was stolen in all the confusion.
- 
  **Reward:** The crown will pay a tenth of the remaining "clean" gold for the strongbox's return.  
- 
+
  **Secrets & Clues**
  - Trappers spotted shamanic markings near the ruined church in the woods to the east.
  - The church was devoted to an old god of trickery.
  - A surviving guardsmen claims he saw a horned human fighting alongside the goblins
  - Unknown to the adventurers and the crown, there is an unopened letter in the strongbox addressed to the regent. It contains incriminating information.
-
 The second adventure idea considers that without the telltale color, goblin gold is indistinguishable from unripe gold, which opens the door for some *accursed* counterfeit.
 
-## Wyrd Circulation
+---
+# Wyrd Circulation
 
  **Inciting incident:** A town has been plagued with wyrd mutations. Their villagers are having strange dreams and sprouting spines, hooves, and horns. None have it worse than the merchants.
- 
- **Secrets & Clues**
- - Neighboring merchants are selling out whenever they travel to the wyrded town -- they take it as a boon.
- - Some townsfolk praise the gods for their town's sudden fortune, while others lock themselves in their homes in fear of catching the wyrd "disease".
- - The nearest regent discarded a large sum of goblin gold into a flooded quarry.
- - A family of rock gnomes are using the goblin gold as their honey pot. They are recovering the goblin gold from the quarry and coating it in a thin layer of pure gold to fool merchants.
 
+**Secrets & Clues**
+- Neighboring merchants are selling out whenever they travel to the wyrded town -- they take it as a boon.
+- Some townsfolk praise the gods for their town's sudden fortune, while others lock themselves in their homes in fear of catching the wyrd "disease".
+- The nearest regent discarded a large sum of goblin gold into a flooded quarry.
+- A family of rock gnomes are using the goblin gold as their honey pot. They are recovering the goblin gold from the quarry and coating it in a thin layer of pure gold to fool merchants.
+
+---
 This is the maiden post on this blog, so I thought it would be fitting to write about it's namesake. That's all. Next posts will be about my fantasy setting: **Catadaya** and its pantheon, and its goblins, and their green gold.

@@ -49,7 +49,7 @@ p {
     color: var(--text-color);
     font-size: 20px;
     font-family: 'Montserrat';
-    line-height: 1.5
+    line-height: 1.75
 }
 
 table {
@@ -76,9 +76,14 @@ ul {
     font-size: 18px;
 }
 
+ol {
+    color: var(--text-color);
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
 b, strong {
     color: var(--text-color);
-    font-family: 'Maname';
 }
 
 a:link, a:visited {
@@ -94,7 +99,7 @@ a:hover {
 
 @media (max-width: 768px) {#blog-post-nav{font-size: 1.17em;}}
 
-#nav-bar-text{
+#nav-bar-text, #blog-date{
     font-family: 'Maname';
     color: var(--text-color);
 }
