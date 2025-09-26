@@ -24,7 +24,7 @@ The following is a collection of three ritual spells intended to inspire adventu
 
 **Requirements:** The Moon Blade, a lunar-forged weapon long since lost. The locations of the 8 lunar seals: temples devoted to the Thing on the moon, or locks to seal it away.
 
-**Ritual:** Begin at the new moon seal. Beneath the corresponding lunar phase, release the seal with the blade. As the moon shifts between phases, travel to the corresponding seal and sever it. Your journey will end when you sever the final seal beneath the full moon. Once the ritual is started, failing to sever a seal before its phase is complete will destroy the Moon Blade and mend all severed seals.
+**Ritual:** Begin at the new moon seal. Beneath the corresponding lunar phase, release the seal with the blade. As the moon shifts between phases, travel to the corresponding seal and sever it. Your journey will end when you sever the final seal beneath the waning crescent. Once the ritual is started, failing to sever a seal before its phase is complete will destroy the Moon Blade and mend all severed seals.
 
 **Effect:** Upon severing the final seal, a gate to the moon will open within your vicinity. A creature that steps through such a moon gate is instantly transported to a corresponding gate upon the moon, which it can use to return. Creatures that travel through a moon gate are acclimatized to the lunar environment. Upon each subsequent new moon while at least 1 lunar seal is severed, you may open another moon gate at a point of your choosing that you can see. 
 
