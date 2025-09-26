@@ -47,9 +47,9 @@ h2, h3, h4, h5, h6 {
 
 p {
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Montserrat';
-    line-height: 1.75
+    line-height: 1.5
 }
 
 table {
@@ -82,6 +82,10 @@ ol {
     font-size: 18px;
 }
 
+li {
+    margin-top: 5px;
+}
+
 b, strong {
     color: var(--text-color);
 }
@@ -89,7 +93,7 @@ b, strong {
 a:link, a:visited {
     color: var(--text-color);
     text-decoration: none;
-    font-style: oblique;
+
 }
 
 a:hover {
@@ -102,4 +106,15 @@ a:hover {
 #nav-bar-text, #blog-date{
     font-family: 'Maname';
     color: var(--text-color);
+}
+
+#blog-title {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#blog-desc {
+    font-size: 18px;
+    margin-top: 0;
+    line-height: 1;
 }

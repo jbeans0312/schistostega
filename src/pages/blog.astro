@@ -26,6 +26,7 @@ const posts = (await getCollection('blog')).sort((b,a) => a.data.date.valueOf() 
 					<div id={post.id}>
 						<h1><a href={`/blog/${post.id}`}>{post.data.title}</a></h1>
 						<strong id="blog-date">{post.data.date.toLocaleDateString()}</strong>
+						<p id="blog-desc">{post.data.description}</p>
 					</div>
 				))
 			}

@@ -10,6 +10,7 @@ const blog = defineCollection({
     schema: z.object({
         title: z.string(),
         date: z.coerce.date(),
+        description: z.string().optional(),
         relatedPosts: z.array(reference('blog')).optional(),
         relatedAdventures: z.array(reference('adventures')).optional()
     })
