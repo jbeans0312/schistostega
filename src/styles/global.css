@@ -88,12 +88,18 @@ li {
 
 b, strong {
     color: var(--text-color);
+    font-weight: bolder
 }
+
+
 
 a:link, a:visited {
     color: var(--text-color);
-    text-decoration: none;
+    text-decoration: underline;
+}
 
+#nav {
+    text-decoration: none;
 }
 
 a:hover {

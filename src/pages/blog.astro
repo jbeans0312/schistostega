@@ -30,7 +30,7 @@ const posts = (await getCollection('blog')).sort(
 			{
 				posts.map(post => (
 					<div id={post.id}>
-						<h1><a href={`/blog/${post.id}`}>{post.data.title}</a></h1>
+						<h1><a id="nav" href={`/blog/${post.id}`}>{post.data.title}</a></h1>
 						<strong id="blog-date">{post.data.updated_date ? post.data.updated_date.toLocaleDateString() : post.data.published_date.toLocaleDateString()}</strong>
 						<p id="blog-desc">{post.data.description}</p>
 					</div>
