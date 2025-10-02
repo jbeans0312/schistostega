@@ -1,6 +1,6 @@
 ---
 title: "Goblin Gold"
-date: 08-26-2025
+published_date: 08-26-2025
 tags: ["homebrew", "goblins"]
 description: "birth of schistostega ~/~ homebrew rules for wyrd goblin gold ~/~ going green ~/~ two goblin hooks"
 ---

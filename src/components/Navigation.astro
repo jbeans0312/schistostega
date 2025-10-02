@@ -2,7 +2,13 @@
 import '../styles/global.css'
 import '../../astro.config.mjs'
 import { getCollection } from 'astro:content'
-const blogPosts = (await getCollection('blog')).sort((a,b) => a.data.date.valueOf() - b.data.date.valueOf());
+const blogPosts = (await getCollection('blog')).sort(
+  (b, a) => {
+    const dateA = a.data.updated_date ? a.data.updated_date.valueOf() : a.data.published_date.valueOf();
+    const dateB = b.data.updated_date ? b.data.updated_date.valueOf() : b.data.published_date.valueOf();
+    return dateA - dateB;
+  }
+);
 const adventuresPosts = (await getCollection('adventures')).sort((a,b) => a.data.date.valueOf() - b.data.date.valueOf());
 ---
 <style>

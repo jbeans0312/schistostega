@@ -1,6 +1,6 @@
 ---
 title: "Rituals, Three"
-date: 09-26-2025
+published_date: 09-26-2025
 tags: ["homebrew", "spells", "rituals"]
 description: "homebrew rules for three powerful ritual spells worthy of their own adventure ~/~ channel the influence of a dead bloodline ~/~ welcome guests through the moon gate ~/~ consecrate a blessed stedding"
 ---

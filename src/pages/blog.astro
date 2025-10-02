@@ -7,7 +7,13 @@ import ContentWrapper from "../components/ContentWrapper.astro";
 import SmallNavigation from '../components/SmallNavigation.astro';
 import { getCollection } from 'astro:content'
 
-const posts = (await getCollection('blog')).sort((b,a) => a.data.date.valueOf() - b.data.date.valueOf());
+const posts = (await getCollection('blog')).sort(
+  (b, a) => {
+    const dateA = a.data.updated_date ? a.data.updated_date.valueOf() : a.data.published_date.valueOf();
+    const dateB = b.data.updated_date ? b.data.updated_date.valueOf() : b.data.published_date.valueOf();
+    return dateA - dateB;
+  }
+);
 ---
 <style>
 	h1 {
@@ -25,11 +31,11 @@ const posts = (await getCollection('blog')).sort((b,a) => a.data.date.valueOf() 
 				posts.map(post => (
 					<div id={post.id}>
 						<h1><a href={`/blog/${post.id}`}>{post.data.title}</a></h1>
-						<strong id="blog-date">{post.data.date.toLocaleDateString()}</strong>
+						<strong id="blog-date">{post.data.updated_date ? post.data.updated_date.toLocaleDateString() : post.data.published_date.toLocaleDateString()}</strong>
 						<p id="blog-desc">{post.data.description}</p>
 					</div>
 				))
-			}
+				}
 		</ContentWrapper>
 	</body>
 </html>

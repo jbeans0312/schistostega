@@ -1,6 +1,6 @@
 ---
 title: "Spelljammer Reflection 1: The Blighted Bullfrog"
-date: 09-06-2025
+published_date: 09-06-2025
 tags: ["spelljammer"]
 description: "reflection on my first online session ~/~ when to listen to matt colville ~/~ the perils of poor pacing"
 ---

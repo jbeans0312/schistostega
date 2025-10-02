@@ -15,7 +15,9 @@ const { frontmatter } = Astro.props;
 				<SmallPostNavigation page="b-post" showBack showHome></SmallPostNavigation>
 			</div>
             <slot />
-            <p>published to SCHISTOSTEGA on: {frontmatter.date.toLocaleDateString()}</p>
+			
+            <p style="font-style: italic">published to SCHISTOSTEGA on: {frontmatter.published_date.toLocaleDateString()}</p>
+			{frontmatter.updated_date && <p style="font-style: italic">updated on {frontmatter.updated_date.toLocaleDateString()}</p>}
         </ContentWrapper>
 	</body>
 </html>
