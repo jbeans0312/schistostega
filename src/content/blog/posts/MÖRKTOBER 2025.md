@@ -1,17 +1,30 @@
 ---
 title: "MÖRKTOBER 2025"
-published_date: 10-05-2025
+published_date: 10-01-2025
+updated_date: 10-7-2025
 tags: ["homebrew", "MÖRKTOBER"]
 description: "30 days of MÖRK BORG ~/~ homebrew monsters, items, and more ~/~ scum, rot, iron, filth"
 ---
+
 The following is a thread of my MÖRKTOBER 2025 creations. For more information about MÖRKTOBER, visit the [Exuent Press website](https://www.exeunt.press/morktober).
+# 10-4, HOWL
+*Mystery*
 
+A PROPHESYING WIND HOWLS along the Whispering Coast down to the Dahlmore Mountains. 
+
+# " 
+## THE SHADOW PRINCE takes his watch atop a lonely tower 
+## HIS FATHER ROTS upon his throne, nigh his final hour
+## HE HOWLS TO the sea, his fingers rake the sky
+## MY BOY SHALL never rule, for I shall never die!
+# "
 ---
-
 # 10-3, DAGGERS
 *Power*
 
-THE PALE ELVES, hairless creatures of moonlit flesh, forged three terrible daggers each with their own voracious inscription. Driven mad by the moon, the Pale Elves devoured each other and the daggers were lost. The Blood Countess covets them for she knows that the daggers' inscriptions will be revealed when wet with blood. Read them to channel their powers.
+PALE ONES' DAGGERS
+
+THE PALE ELVES, HAIRLESS CREATURES OF MOONLIT FLESH, forged three terrible daggers each with their own voracious inscription. Driven mad by the moon, the Pale Elves devoured each other and the daggers were lost. The Blood Countess covets them for she knows that the daggers' inscriptions will be revealed when wet with blood. Read them to channel their powers.
 
 | **d3** | **PALE DAGGER INSCRIPTIONS**                                                                                                                                       |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -20,7 +33,6 @@ THE PALE ELVES, hairless creatures of moonlit flesh, forged three terrible dagge
 | 3      | WITH MOONLIT EYES: Your eyes flash with blinding moonlight. 2 creatures take d6 damage and you are blinded for d2 rounds.                                          |
 
 ---
-
 # 10-2, MAW
 *Location*
 
@@ -40,15 +52,14 @@ A PEARL GROWS BENEATH ITS TONGUE. It is said that the pearl will become a new wo
 | 4   | You awaken beneath a mound of goblins. You fell in battle. Must escape the lips.                      |
 
 ---
-
 # 10-1, FROG
 *Monster*
 
 I am not fond of frogs or toads. Videos like [this](https://www.youtube.com/shorts/Ctqr0RSoQY0) always freaked me out growing up. Here is a terrible creature of slimy skin and tacky tongue.
 
 **Grelb, Scum Frog**
-**HP** 32 | **Morale** 6 | **Thick Hide** d2 | **Strike** 2d4 or **Tongue** d6 + special
 
+**HP** 32 | **Morale** 6 | **Thick Hide** d2 | **Strike** 2d4 or **Tongue** d6 + special
 **Special:** Either pull target to self or disarm target.
 
 BENEATH THE UNDEAD VALLEY'S SHIMMERING SCUM a creature with a tongue the length of two men marinates in the cursed muck, waiting for its next meal. The frog attacks with surprise and tries to drag its victim beneath the scum. If drawn out of the muck, the frog expels a stinking bubble of swamp curse from its maw each round. The target tests Agility DR14 or is covered in swamp curse for 1 day. Swamp creatures are attracted to the smell like a hound is attracted to a limp ewe.
