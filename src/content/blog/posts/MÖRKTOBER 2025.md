@@ -6,13 +6,27 @@ tags: ["homebrew", "MÖRKTOBER"]
 description: "30 days of MÖRK BORG ~/~ homebrew monsters, items, and more ~/~ scum, rot, iron, filth"
 ---
 The following is a thread of my MÖRKTOBER 2025 creations. For more information about MÖRKTOBER, visit the [Exuent Press website](https://www.exeunt.press/morktober).
+# 10-6, HUSK
+*Character Feature*
 
+YEARS OF ENDLESS RAIN HAS ROTTED YOUR POPLAR TOMB. The cliff you were buried in erodes and is swallowed by the raging sea. Your fingers pierce the sodden earth and you pull yourself from its womb. Droplets vanish into your papyrus skin. Funeral rags hang loose upon your withered frame, drooping as they wet. You stare into the puddle that forms in your muddy afterbirth. You do not recognize what you see, nor what used to fill the husk that stares back. These things will come.
+
+IN TIME, YOU WILL BE WHOLE AGAIN. As a husk, your DM will roll on the PIECES OF THE WHOLE table d3 times. Each time you complete a goal, or are broken, ask your GM to reveal to you a piece as a part of your past self returns. 
+
+| d6  | PIECES OF THE WHOLE                                                 |
+| --- | ------------------------------------------------------------------- |
+| 1   | You were buried with an heirloom. You left it behind in your grave. |
+| 2   | Two scars run long your shoulder blades. You remember wings.        |
+| 3   | This is not how it was supposed to go. You were an heir.            |
+| 4   | Your hands are not your own. You remember who you took them from.   |
+| 5-6 | You remember who did this to you. (Multiple people if rolled twice) |
+
+---
 # 10-5, STAIN
 *Trap*
+### **MIRICENT'S STAINED GLASS**
 
-**MIRICENT'S STAINED GLASS**
-
-### AN INTRICATE PANE of stained glass impends upon the pews below. Rays of light of every color emanate from its surface, painting the church in colors not seen for generations; although, no sunlight passes through the window. The congregation kneels before the pane, their hands stretching towards the portal as if they were trying to grasp the light itself. The pastor, a withered man engulfed in the backlight leads the knelt in prayer:
+### AN INTRICATE PANE of stained glass impends upon the pews below. Rays of light of every color emanate from its surface, painting the church in hues not seen for generations; although, no sunlight passes through the window. The congregation kneels before the pane, their hands stretching towards the portal as if they were trying to grasp the light itself. The pastor, a withered man engulfed in the backlight leads the knelt in prayer:
 
 *PRAISE MIRICENT for his gentling! PRAISE!*
 
@@ -26,9 +40,9 @@ The following is a thread of my MÖRKTOBER 2025 creations. For more information 
 
 *AND BY HIS WILL that my blood flows! BY HIS WILL!*
 
-You can't help but to gaze upon it, maybe there's something you're not seeing...
+### You can't help but to gaze upon it, maybe there's something you're not seeing...
 
-EFFECT: For each round spent gazing upon the glass, gain hit points then make a Presence test or fall to your knees and join the congregation, embracing MIRICENT's warmth. Each round spent staring grants you more hit points and increases the Presence test DR. Repeat Presence test each dawn to awake to dark reality.
+For each round spent gazing upon the glass, gain HP then make a Presence test or fall to your knees and join the congregation, embracing MIRICENT's warmth. Each round spent staring grants you more HP and increases the Presence test DR. Repeat Presence test each dawn to awake to dark reality.
 
 ---
 # 10-4, HOWL
