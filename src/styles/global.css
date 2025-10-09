@@ -124,3 +124,7 @@ a:hover {
     margin-top: 0;
     line-height: 1;
 }
+
+.astro-code {
+    background-color: var(--background-color)
+}

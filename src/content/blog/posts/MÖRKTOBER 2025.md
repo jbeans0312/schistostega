@@ -1,12 +1,36 @@
 ---
 title: "MÖRKTOBER 2025"
 published_date: 10-01-2025
-updated_date: 10-7-2025
+updated_date: 10-9-2025
 tags: ["homebrew", "MÖRKTOBER"]
 description: "30 days of MÖRK BORG ~/~ homebrew monsters, items, and more ~/~ scum, rot, iron, filth"
 ---
-
 The following is a thread of my MÖRKTOBER 2025 creations. For more information about MÖRKTOBER, visit the [Exuent Press website](https://www.exeunt.press/morktober).
+
+# 10-5, STAIN
+*Trap*
+
+**MIRICENT'S STAINED GLASS**
+
+### AN INTRICATE PANE of stained glass impends upon the pews below. Rays of light of every color emanate from its surface, painting the church in colors not seen for generations; although, no sunlight passes through the window. The congregation kneels before the pane, their hands stretching towards the portal as if they were trying to grasp the light itself. The pastor, a withered man engulfed in the backlight leads the knelt in prayer:
+
+*PRAISE MIRICENT for his gentling! PRAISE!*
+
+*PRAISE MIRICENT for his warmth! PRAISE!*
+
+*PRASE MIRICENT for his cure! PRAISE!*
+
+*FOR IT IS BY HIS GRACE that I can see the light! BY HIS GRACE!*
+
+*AND BY HIS HAND that I can feel the sun! BY HIS HAND!*
+
+*AND BY HIS WILL that my blood flows! BY HIS WILL!*
+
+You can't help but to gaze upon it, maybe there's something you're not seeing...
+
+EFFECT: For each round spent gazing upon the glass, gain hit points then make a Presence test or fall to your knees and join the congregation, embracing MIRICENT's warmth. Each round spent staring grants you more hit points and increases the Presence test DR. Repeat Presence test each dawn to awake to dark reality.
+
+---
 # 10-4, HOWL
 *Mystery*
 
