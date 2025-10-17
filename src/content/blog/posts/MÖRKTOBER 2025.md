@@ -1,11 +1,28 @@
 ---
 title: "MÖRKTOBER 2025"
 published_date: 10-01-2025
-updated_date: 10-9-2025
+updated_date: 10-16-2025
 tags: ["homebrew", "MÖRKTOBER"]
 description: "30 days of MÖRK BORG ~/~ homebrew monsters, items, and more ~/~ scum, rot, iron, filth"
 ---
 The following is a thread of my MÖRKTOBER 2025 creations. For more information about MÖRKTOBER, visit the [Exuent Press website](https://www.exeunt.press/morktober).
+# 10-7, SHARD
+*Weapon*
+
+WITH A GLIMMERING BLADE raised above her head, the Queen of the Tower fell foe after foe, lavishing the viscera rain as their corpses became a pedestal for her macabre campaign.
+
+TOWER QUEEN'S AXE (Battle axe)
+
+Forged from a shard of wyrm fang. On an attack roll of 17-20, cleave a limb from your target. 
+
+| d3  | ONE LIMB LIGHTER                             |
+| --- | -------------------------------------------- |
+| 1   | Lop off an arm. Defence checks become DR 10. |
+| 2   | Remove a leg. Creature cannot walk.          |
+| 3   | Split a wing. Creature cannot fly.           |
+
+
+---
 # 10-6, HUSK
 *Character Feature*
 
