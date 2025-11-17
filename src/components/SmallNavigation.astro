@@ -27,9 +27,9 @@ backLinkMap.set("b-post", "../");
     }
 </style>
 <div>
-    {showBack && <h2 id="blog-post-nav"><a href={backLinkMap.get(page)}><span style="font-family: Chapbook;">C </span>back</a></h2> <h3 id="blog-post-nav">/</h3>}
-    {showHome && <h2 id="blog-post-nav"><a href="../../"><span style="font-family: Chapbook;">c </span>home</a></h2>}
-    {showBlog && <h3 id="blog-post-nav">/</h3> <h2 id="blog-post-nav"><a href="../blog"><span style="font-family: Chapbook;">V </span>blog</a></h2>}
-    {showAdventures && <h3 id="blog-post-nav">/</h3> <h2 id="blog-post-nav"><a href="../adventures"><span style="font-family: Chapbook;">N </span>adventures</a></h2>}
-    {showContact && <h3 id="blog-post-nav">/</h3> <h2 id="blog-post-nav"><a href="../contact"><span style="font-family: Chapbook;">L </span>contact</a></h2>}
+    {showBack && <h2 id="blog-post-nav"><a id="nav" href={backLinkMap.get(page)}><span style="font-family: Chapbook;">C </span>back</a></h2> <h3 id="blog-post-nav">/</h3>}
+    {showHome && <h2 id="blog-post-nav"><a id="nav" href="../../"><span style="font-family: Chapbook;">c </span>home</a></h2>}
+    {showBlog && <h3 id="blog-post-nav">/</h3> <h2 id="blog-post-nav"><a id="nav" href="../blog"><span style="font-family: Chapbook;">V </span>blog</a></h2>}
+    {showAdventures && <h3 id="blog-post-nav">/</h3> <h2 id="blog-post-nav"><a id="nav" href="../adventures"><span style="font-family: Chapbook;">N </span>adventures</a></h2>}
+    {showContact && <h3 id="blog-post-nav">/</h3> <h2 id="blog-post-nav"><a id="nav" href="../contact"><span style="font-family: Chapbook;">L </span>contact</a></h2>}
 </div>

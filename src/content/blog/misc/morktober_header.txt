@@ -1,0 +1,6 @@
+---
+title: "MÖRKTOBER 2025"
+published_date: 10-01-2025
+tags: ["homebrew", "MÖRKTOBER"]
+description: "30 days of MÖRK BORG ~/~ homebrew monsters, items, and more ~/~ scum, rot, iron, filth"
+---

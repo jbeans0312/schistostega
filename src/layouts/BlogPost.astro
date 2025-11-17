@@ -11,11 +11,13 @@ const { frontmatter } = Astro.props;
         <ContentWrapper>
 			<div style="display: flex; flex-direction: row; justify-content: space-between; 
 			margin-top: 0px; align-items: center;">
-				<h1>{frontmatter.title}</h1>
-				<SmallPostNavigation page="b-post" showHome></SmallPostNavigation>
+				<h1 style="max-width:60%;">{frontmatter.title}</h1>
+				<SmallPostNavigation page="b-post" showBack showHome></SmallPostNavigation>
 			</div>
             <slot />
-            <p>published to SCHISTOSTEGA on: {frontmatter.date}</p>
+			
+            <p style="font-style: italic">published to SCHISTOSTEGA on: {frontmatter.published_date.toLocaleDateString()}</p>
+			{frontmatter.updated_date && <p style="font-style: italic">updated on {frontmatter.updated_date.toLocaleDateString()}</p>}
         </ContentWrapper>
 	</body>
 </html>
