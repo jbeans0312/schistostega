@@ -49,7 +49,7 @@ p {
     color: var(--text-color);
     font-size: 18px;
     font-family: 'Montserrat';
-    line-height: 1.5
+    line-height: 1.66
 }
 
 table {
@@ -92,7 +92,6 @@ b, strong {
 }
 
 
-
 a:link, a:visited {
     color: var(--text-color);
     text-decoration: underline;
@@ -122,7 +121,7 @@ a:hover {
 #blog-desc {
     font-size: 18px;
     margin-top: 0;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .astro-code {
