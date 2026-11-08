@@ -3,6 +3,7 @@ title: "More Than Krill"
 published_date: 12-08-2025
 tags: ["catadaya", "writing"]
 description: "a catadaya story ~/~ duthgar port ~/~ kriller yards"
+thumbnail: "goblin-lanterns-helen-hyde-1906.webp"
 ---
 “Krilling ain’t for everyone son, it damn sure ain’t for me,” the old rat croaked, sharpening his dagger on the cobblestone pavers that lined the walls of their squalid den. “Trust me boy, folks like us are resourceful, we’re kings of our own destiny. We don’t need no captain, no coat of arms.” He held the dagger up to catch the light of a lantern passing overhead, “sharp… just like we is,” he vaunted, holding the blade out for Patches to take. “Now come on son, there’s more than krill in those waters.”
 

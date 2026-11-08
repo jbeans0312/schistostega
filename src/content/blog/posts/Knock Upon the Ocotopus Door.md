@@ -3,6 +3,7 @@ title: "Knock Upon the Octopus Door"
 published_date: 09-20-2026
 tags: ["dugeon", "adventure"]
 description: "i'd drink to that ~/~ 5 room dungeon "
+thumbnail: "goblin-lanterns-helen-hyde-1906.webp"
 ---
 A 5 room wine 'n' dungeon I made as a demo for an ascii dungeon crawler my friend Nick and I are working on. The crawler itself is mostly an exercise to see if we enjoy making games together, but it's also a great excuse for me to make a bunch of fun dungeons.
 

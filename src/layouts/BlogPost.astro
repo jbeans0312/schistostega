@@ -4,11 +4,35 @@ import Head from '../components/Head.astro';
 import ContentWrapper from "../components/ContentWrapper.astro";
 import SmallPostNavigation from '../components/SmallNavigation.astro';
 const { frontmatter } = Astro.props;
+const thumbnails = import.meta.glob<string>(
+	'../content/blog/images/thumbnails/final/*.webp',
+	{ eager: true, query: '?url', import: 'default' }
+);
+const thumbnailByName = Object.fromEntries(
+	Object.entries(thumbnails).map(([path, url]) => [path.split('/').pop(), url])
+);
+const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'];
 ---
+<style>
+	.post-thumbnail {
+		display: block;
+		width: 100%;
+		aspect-ratio: 5 / 1;
+		object-fit: cover;
+		padding-top: 0.75rem;
+		margin-bottom: 0.75rem;
+	}
+</style>
 <html lang="en">
 <Head title={frontmatter.title}></Head>
 	<body>
         <ContentWrapper>
+			<img
+				class="post-thumbnail"
+				src={thumbnailByName[frontmatter.thumbnail ?? ''] ?? fallbackThumbnail}
+				alt=""
+				fetchpriority="high"
+			/>
 			<div style="display: flex; flex-direction: row; justify-content: space-between; 
 			margin-top: 0px; align-items: center;">
 				<h1 style="max-width:60%;">{frontmatter.title}</h1>
