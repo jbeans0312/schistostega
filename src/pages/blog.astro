@@ -77,7 +77,7 @@ const posts = (await getCollection('blog')).sort(
 	<Head title="blog"></Head>
 	<body>
 		<Headline title={"BLOG"}></Headline>
-		<SmallNavigation page="blog" showBack={false} showHome showAdventures showContact></SmallNavigation>
+		<SmallNavigation page="blog" showBack={false} showHome showContact></SmallNavigation>
 		<ContentWrapper>
 			{
 				posts.map(post => (
