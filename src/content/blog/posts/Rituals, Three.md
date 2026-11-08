@@ -3,7 +3,8 @@ title: "Rituals, Three"
 published_date: 09-26-2025
 tags: ["homebrew", "spells", "rituals"]
 description: "homebrew rules for three powerful ritual spells worthy of their own adventure ~/~ channel the influence of a dead bloodline ~/~ welcome guests through the moon gate ~/~ consecrate a blessed stedding"
-thumbnail: "goblin-lanterns-helen-hyde-1906.webp"
+thumbnail: "first-intermezzo-jacques-callot-1617.webp"
+thumbnail-src: "First Intermezzo, Jacques Callot, 1617"
 ---
 What would you do to travel between worlds, to influence the masses, to grant a wish? To what distant lands would you venture? To what depths would you crawl? To what ends would you scheme?
 

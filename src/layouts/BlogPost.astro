@@ -17,7 +17,7 @@ const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'
 	.post-thumbnail {
 		display: block;
 		width: 100%;
-		aspect-ratio: 5 / 1;
+		aspect-ratio: 4 / 2;
 		object-fit: cover;
 		padding-top: 0.75rem;
 		margin-bottom: 0.75rem;
@@ -42,6 +42,7 @@ const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'
 			
             <p style="font-style: italic">published to SCHISTOSTEGA on: {frontmatter.published_date.toLocaleDateString()}</p>
 			{frontmatter.updated_date && <p style="font-style: italic">updated on {frontmatter.updated_date.toLocaleDateString()}</p>}
+			{frontmatter['thumbnail-src'] && <p style="font-style: italic">thumbnail: {frontmatter['thumbnail-src']}</p>}
         </ContentWrapper>
 	</body>
 </html>

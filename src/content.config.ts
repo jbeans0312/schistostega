@@ -13,6 +13,7 @@ const blog = defineCollection({
         updated_date: z.coerce.date().optional(),
         description: z.string().optional(),
         thumbnail: z.string().optional(),
+        'thumbnail-src': z.string().optional(),
         relatedPosts: z.array(reference('blog')).optional(),
         relatedAdventures: z.array(reference('adventures')).optional()
     })

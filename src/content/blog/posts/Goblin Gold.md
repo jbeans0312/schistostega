@@ -4,6 +4,7 @@ published_date: 08-26-2025
 tags: ["homebrew", "goblins"]
 description: "birth of schistostega ~/~ homebrew rules for wyrd goblin gold ~/~ going green ~/~ two goblin hooks"
 thumbnail: "goblin-lanterns-helen-hyde-1906.webp"
+thumbnail-src: "Goblin Lanterns, Helen Hyde, 1906"
 ---
 
 Schistostega is a luminous green moss that grows in caves. The elusive moss is also known as "dragon's gold" or _"goblin's gold"_ since it can easily be mistaken for loose emeralds strewn across the cave floor or veins of sickly gold climbing up its walls. As much as I like the idea of glowing green moss, I think I like the idea of green goblin gold even more--so let's explore! From now on, my goblins have green gold.
