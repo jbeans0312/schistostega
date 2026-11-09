@@ -47,7 +47,7 @@ This one is themed around **Büt the Unquenchable**, a demon that offers a begui
      #    ¤#
      #######
 ```
-*built with [this map creator](https://stmn.itch.io/ascii-map-editor)*
+*built with [STMN's ASCII Map Editor](https://stmn.itch.io/ascii-map-editor)*
 ## [1] Entryway
 - **Skeleton** slumped against a decorated iron **door**
 - Red stained oak **barrels**
