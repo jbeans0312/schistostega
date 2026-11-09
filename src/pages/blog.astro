@@ -72,30 +72,107 @@ const posts = (await getCollection('blog')).sort(
 	.blog-thumbnail-link:focus-visible::after {
 		opacity: 1;
 	}
+	.blog-page-layout {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) 14rem;
+		gap: 2rem;
+		align-items: start;
+		max-width: 1100px;
+		margin: 0 auto;
+		padding-inline: 1rem;
+	}
+	.blog-sidebar {
+		position: sticky;
+		top: 1rem;
+		min-width: 0;
+		border-left: 1px solid var(--text-color);
+		padding-left: 1rem;
+	}
+	.blog-sidebar-fox-link {
+		display: flex;
+		min-height: 7rem;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2.5rem;
+		font-family: 'Chapbook';
+		font-size: 6rem;
+		line-height: 1;
+		color: var(--text-color);
+		text-decoration: none;
+		transition: color 180ms ease;
+	}
+	.blog-sidebar-fox-link:hover,
+	.blog-sidebar-fox-link:focus-visible {
+		color: var(--highlight-color);
+	}
+	.sidebar-heading {
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+	.sidebar-heading span {
+		font-family: 'Chapbook';
+		color: var(--text-color);
+	}
+	.sidebar-heading h2 {
+		margin: 0;
+		font-size: 1.1rem;
+	}
+	.blog-sidebar ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	.blog-sidebar li {
+		margin-block: 0.5rem;
+	}
+	@media (max-width: 800px) {
+		.blog-page-layout {
+			grid-template-columns: minmax(0, 1fr);
+			padding-inline: 0.5rem;
+		}
+		.blog-sidebar {
+			display: none;
+		}
+	}
 </style>
 <html lang="en">
 	<Head title="blog"></Head>
-	<body>
-		<Headline title={"BLOG"}></Headline>
+	<body id="top">
+		<Headline title={"SCHISTOSTEGA"}></Headline>
 		<SmallNavigation page="blog" showBack={false} showHome showContact></SmallNavigation>
-		<ContentWrapper>
-			{
-				posts.map(post => (
-					<div class="blog-entry" id={post.id}>
-						<a class="blog-thumbnail-link" href={`/blog/${post.id}`} aria-label={`Read ${post.data.title}`}>
-							<img
-								class="blog-thumbnail"
-								src={thumbnailByName[post.data.thumbnail ?? ''] ?? fallbackThumbnail}
-								alt=""
-								loading="lazy"
-							/>
-						</a>
-						<h1><a id="nav" href={`/blog/${post.id}`}>{post.data.title}</a></h1>
-						<strong id="blog-date">{post.data.updated_date ? post.data.updated_date.toLocaleDateString() : post.data.published_date.toLocaleDateString()}</strong>
-						<p id="blog-desc">{post.data.description}</p>
-					</div>
-				))
+		<div class="blog-page-layout">
+			<ContentWrapper class="post-main">
+				{
+					posts.map(post => (
+						<div class="blog-entry" id={post.id}>
+							<a class="blog-thumbnail-link" href={`/blog/${post.id}`} aria-label={`Read ${post.data.title}`}>
+								<img
+									class="blog-thumbnail"
+									src={thumbnailByName[post.data.thumbnail ?? ''] ?? fallbackThumbnail}
+									alt=""
+									loading="lazy"
+								/>
+							</a>
+							<h1><a id="nav" href={`/blog/${post.id}`}>{post.data.title}</a></h1>
+							<strong id="blog-date">{post.data.updated_date ? post.data.updated_date.toLocaleDateString() : post.data.published_date.toLocaleDateString()}</strong>
+							<p id="blog-desc">{post.data.description}</p>
+						</div>
+					))
 				}
-		</ContentWrapper>
+			</ContentWrapper>
+			<aside class="blog-sidebar" aria-label="Blog sidebar">
+				<a class="blog-sidebar-fox-link" href="#top" aria-label="Back to top">
+					<span aria-hidden="true">N</span>
+				</a>
+				<nav aria-label="Blog posts">
+					<div class="sidebar-heading"><span>a</span><h2>Posts</h2></div>
+					<ul>
+						{posts.map(post => (
+							<li><a href={`/blog/${post.id}`}>{post.data.title}</a></li>
+						))}
+					</ul>
+				</nav>
+			</aside>
+		</div>
 	</body>
 </html>

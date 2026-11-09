@@ -13,6 +13,9 @@ import { getCollection } from 'astro:content'
 		margin-bottom: 5px;
 		margin-top:0px;
 	}
+	span {
+        font-family: 'Chapbook';
+    }
 </style>
 <html lang="en">
 <Head title="contact"></Head>
@@ -20,7 +23,9 @@ import { getCollection } from 'astro:content'
 		<Headline title={"CONTACT"}></Headline>
 		<SmallNavigation page="contact" showBack={false} showHome showAdventures showBlog></SmallNavigation>
 		<ContentWrapper>
-			<p>email: poolbeans@gmail.com</p>
+			<h2><span>B  </span><a href="mailto:pooolbeans@gmail.com">Send an email</a></h2>
+			<h2><span>n  </span><a href="https://www.instagram.com/bluthunderbomb/">Follow on Instagram</a></h2>
+			<h2><span>U  </span><a href="https://bsky.app/profile/schistostega.bsky.social">Follow on Bluesky</a></h2>
 		</ContentWrapper>
 	</body>
 </html>
