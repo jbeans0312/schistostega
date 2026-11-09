@@ -3,6 +3,7 @@ title: "Spelljammer Reflection 1: The Blighted Bullfrog"
 published_date: 09-06-2025
 tags: ["spelljammer"]
 description: "reflection on my first online session ~/~ when to listen to matt colville ~/~ the perils of poor pacing"
+thumbnail: "this-is-a-test.webp"
 ---
 # Background
 My Spelljammer campaign recently moved online. Since this is my first time running any RPG online, I figured it would be good GM exercise to debrief each session here on Schistostega. I'll structure each reflection by summarizing a beat of the session, then commenting on what went well, what didn't, and any other GM wisdom I have to add.

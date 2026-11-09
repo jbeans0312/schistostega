@@ -3,6 +3,8 @@ title: "Knock Upon the Octopus Door"
 published_date: 09-20-2026
 tags: ["dugeon", "adventure"]
 description: "i'd drink to that ~/~ 5 room dungeon "
+thumbnail: "cest-dangerux-la-peche-a-lepervier-honore-daumier-1871.webp"
+thumbnail-src: "C'est dangereux, la pêche à l'épervier, Honoré Daumier, 1871"
 ---
 A 5 room wine 'n' dungeon I made as a demo for an ascii dungeon crawler my friend Nick and I are working on. The crawler itself is mostly an exercise to see if we enjoy making games together, but it's also a great excuse for me to make a bunch of fun dungeons.
 
@@ -45,7 +47,7 @@ This one is themed around **Büt the Unquenchable**, a demon that offers a begui
      #    ¤#
      #######
 ```
-*built with [this map creator](https://stmn.itch.io/ascii-map-editor)*
+*built with [STMN's ASCII Map Editor](https://stmn.itch.io/ascii-map-editor)*
 ## [1] Entryway
 - **Skeleton** slumped against a decorated iron **door**
 - Red stained oak **barrels**

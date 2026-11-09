@@ -4,6 +4,8 @@ published_date: 10-01-2025
 updated_date: 10-16-2025
 tags: ["homebrew", "MÖRKTOBER"]
 description: "30 days of MÖRK BORG ~/~ homebrew monsters, items, and more ~/~ scum, rot, iron, filth"
+thumbnail: "the-skeletons-marco-dente-1518.webp"
+thumbnail-src: "The Skeletons, Marco Dente, 1518"
 ---
 The following is a thread of my MÖRKTOBER 2025 creations. For more information about MÖRKTOBER, visit the [Exuent Press website](https://www.exeunt.press/morktober).
 # 10-7, SHARD

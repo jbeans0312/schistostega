@@ -1,9 +1,10 @@
 ---
 import '../styles/global.css';
 import '@fontsource/montserrat'
+const { class: className } = Astro.props;
 ---
 <style>
-    div{
+    #content-wrapper{
     border-style: solid;
     border-color: var(--text-color);
     padding: 10px;
@@ -37,7 +38,10 @@ import '@fontsource/montserrat'
         margin-right: 0.2em;
     }
     }
+    #content-wrapper.post-main {
+        margin: 0;
+    }
 </style>
-<div id="content-wrapper">
+<div id="content-wrapper" class={className}>
     <slot />
 </div>

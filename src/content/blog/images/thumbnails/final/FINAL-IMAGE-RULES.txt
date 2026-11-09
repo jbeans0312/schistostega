@@ -1,0 +1,5 @@
+1. Save images to .webp
+2. Tag thumbnail within a post .md file as below
+
+    thumbnail: "<file-name>.webp"
+    thumbnail-src: "<Work name>, <Artist>, <Year of publication>"
