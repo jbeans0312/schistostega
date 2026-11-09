@@ -42,6 +42,12 @@ const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'
 		border-left: 1px solid var(--text-color);
 		padding-left: 1rem;
 	}
+	.post-sidebar-image {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 1rem;
+	}
 	.post-toc h2 {
 		margin-top: 0;
 		font-size: 1.1rem;
@@ -121,6 +127,7 @@ const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'
 				{frontmatter['thumbnail-src'] && <p style="font-style: italic">thumbnail: {frontmatter['thumbnail-src']}</p>}
 			</ContentWrapper>
 			<aside class="post-sidebar" aria-label="Post sidebar" hidden={tocHeadings.length === 0}>
+				<img class="post-sidebar-image" src="/schistostega-fox.webp" alt="" />
 				{tocHeadings.length > 0 && (
 					<nav class="post-toc" aria-label="Table of contents">
 						<div class="sidebar-heading"><span>a</span><h2>On this page</h2></div>
