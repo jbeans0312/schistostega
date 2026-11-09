@@ -3,7 +3,8 @@ import '../styles/global.css'
 import Head from '../components/Head.astro';
 import ContentWrapper from "../components/ContentWrapper.astro";
 import SmallPostNavigation from '../components/SmallNavigation.astro';
-const { frontmatter } = Astro.props;
+const { frontmatter, headings = [] } = Astro.props;
+const tocHeadings = headings.filter(({ depth }) => depth <= 3);
 const thumbnails = import.meta.glob<string>(
 	'../content/blog/images/thumbnails/final/*.webp',
 	{ eager: true, query: '?url', import: 'default' }
@@ -22,27 +23,134 @@ const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'
 		padding-top: 0.75rem;
 		margin-bottom: 0.75rem;
 	}
+	.post-page-layout {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 2rem;
+		align-items: start;
+		max-width: 1100px;
+		margin: 0 auto;
+		padding-inline: 1rem;
+	}
+	.post-page-layout.has-sidebar {
+		grid-template-columns: minmax(0, 1fr) 14rem;
+	}
+	.post-sidebar {
+		position: sticky;
+		top: 1rem;
+		min-width: 0;
+		border-left: 1px solid var(--text-color);
+		padding-left: 1rem;
+	}
+	.post-toc h2 {
+		margin-top: 0;
+		font-size: 1.1rem;
+	}
+	.post-toc ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	.post-toc li {
+		margin-block: 0.5rem;
+	}
+	.post-toc li.nested {
+		padding-left: 1rem;
+	}
+	.post-portals.with-toc {
+		margin-top: 2rem;
+		padding-top: 1rem;
+		border-top: 1px solid var(--text-color);
+	}
+	.post-portals h2 {
+		margin-top: 0;
+		font-size: 1.1rem;
+	}
+	.post-portals ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	.post-portals li {
+		margin-block: 0.5rem;
+		overflow-wrap: anywhere;
+	}
+	@media (max-width: 800px) {
+		.post-page-layout,
+		.post-page-layout.has-sidebar {
+			grid-template-columns: minmax(0, 1fr);
+			padding-inline: 0.5rem;
+		}
+		.post-sidebar {
+			display: none;
+		}
+	}
 </style>
 <html lang="en">
 <Head title={frontmatter.title}></Head>
 	<body>
-        <ContentWrapper>
-			<img
-				class="post-thumbnail"
-				src={thumbnailByName[frontmatter.thumbnail ?? ''] ?? fallbackThumbnail}
-				alt=""
-				fetchpriority="high"
-			/>
-			<div style="display: flex; flex-direction: row; justify-content: space-between; 
-			margin-top: 0px; align-items: center;">
-				<h1 style="max-width:60%;">{frontmatter.title}</h1>
-				<SmallPostNavigation page="b-post" showBack showHome></SmallPostNavigation>
-			</div>
-            <slot />
-			
-            <p style="font-style: italic">published to SCHISTOSTEGA on: {frontmatter.published_date.toLocaleDateString()}</p>
-			{frontmatter.updated_date && <p style="font-style: italic">updated on {frontmatter.updated_date.toLocaleDateString()}</p>}
-			{frontmatter['thumbnail-src'] && <p style="font-style: italic">thumbnail: {frontmatter['thumbnail-src']}</p>}
-        </ContentWrapper>
+		<div class:list={['post-page-layout', { 'has-sidebar': tocHeadings.length > 0 }]}>
+			<ContentWrapper class="post-main">
+				<img
+					class="post-thumbnail"
+					src={thumbnailByName[frontmatter.thumbnail ?? ''] ?? fallbackThumbnail}
+					alt=""
+					fetchpriority="high"
+				/>
+				<div style="display: flex; flex-direction: row; justify-content: space-between; 
+				margin-top: 0px; align-items: center;">
+					<h1 style="max-width:60%;">{frontmatter.title}</h1>
+					<SmallPostNavigation page="b-post" showBack showHome></SmallPostNavigation>
+				</div>
+				<article class="post-content">
+					<slot />
+				</article>
+				<p style="font-style: italic">published to SCHISTOSTEGA on: {frontmatter.published_date.toLocaleDateString()}</p>
+				{frontmatter.updated_date && <p style="font-style: italic">updated on {frontmatter.updated_date.toLocaleDateString()}</p>}
+				{frontmatter['thumbnail-src'] && <p style="font-style: italic">thumbnail: {frontmatter['thumbnail-src']}</p>}
+			</ContentWrapper>
+			<aside class="post-sidebar" aria-label="Post sidebar" hidden={tocHeadings.length === 0}>
+				{tocHeadings.length > 0 && (
+					<nav class="post-toc" aria-label="Table of contents">
+						<h2>On this page</h2>
+						<ul>
+							{tocHeadings.map(({ depth, slug, text }) => (
+								<li class:list={{ nested: depth > 1 }}>
+									<a href={`#${slug}`}>{text}</a>
+								</li>
+							))}
+						</ul>
+					</nav>
+				)}
+				<section class:list={['post-portals', { 'with-toc': tocHeadings.length > 0 }]} id="post-portals" aria-labelledby="post-portals-heading" hidden>
+					<h2 id="post-portals-heading">Off this page</h2>
+					<ul id="post-portals-list"></ul>
+				</section>
+			</aside>
+		</div>
 	</body>
 </html>
+
+<script>
+	const postContent = document.querySelector('.post-content');
+	const postSidebar = document.querySelector('.post-sidebar');
+	const pageLayout = document.querySelector('.post-page-layout');
+	const portalSection = document.querySelector('#post-portals');
+	const portalList = document.querySelector('#post-portals-list');
+	const hasTableOfContents = Boolean(postSidebar?.querySelector('.post-toc'));
+
+	if (postContent && postSidebar && pageLayout && portalSection && portalList) {
+		let portalCount = 0;
+		for (const contentLink of postContent.querySelectorAll('a[href]')) {
+			const portal = document.createElement('a');
+			portal.href = contentLink.href;
+			portal.textContent = contentLink.textContent?.replace(/\s+/g, ' ').trim() || contentLink.href;
+			const item = document.createElement('li');
+			item.append(portal);
+			portalList.append(item);
+			portalCount += 1;
+		}
+		portalSection.hidden = portalCount === 0;
+		const hasSidebarContent = hasTableOfContents || portalCount > 0;
+		postSidebar.hidden = !hasSidebarContent;
+		pageLayout.classList.toggle('has-sidebar', hasSidebarContent);
+	}
+</script>
