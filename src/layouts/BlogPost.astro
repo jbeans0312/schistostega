@@ -146,7 +146,7 @@ const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'
 						<div class="sidebar-heading"><span>a</span><h2>On this page</h2></div>
 						<ul>
 							{tocHeadings.map(({ depth, slug, text }) => (
-								<li class:list={{ nested: depth > 1 }}>
+								<li class:list={{ nested: depth > 1 && text.trim().toLowerCase() !== 'footnotes' }}>
 									<a href={`#${slug}`}>{text}</a>
 								</li>
 							))}
@@ -173,9 +173,14 @@ const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'
 	if (postContent && postSidebar && pageLayout && portalSection && portalList) {
 		let portalCount = 0;
 		for (const contentLink of postContent.querySelectorAll('a[href]')) {
+			const linkText = contentLink.textContent?.replace(/\s+/g, ' ').trim() ?? '';
+			if (Array.from(linkText).length === 1) continue;
+
 			const portal = document.createElement('a');
 			portal.href = contentLink.href;
-			portal.textContent = contentLink.textContent?.replace(/\s+/g, ' ').trim() || contentLink.href;
+			portal.target = '_blank';
+			portal.rel = 'noopener noreferrer';
+			portal.textContent = linkText || contentLink.href;
 			const item = document.createElement('li');
 			item.append(portal);
 			portalList.append(item);
