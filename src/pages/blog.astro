@@ -155,7 +155,7 @@ const posts = (await getCollection('blog')).sort(
 					<div class="sidebar-heading"><span>a</span><h2>Posts</h2></div>
 					<ul>
 						{posts.map(post => (
-							<li><a href={`#${post.id}`}>{post.data.title}</a></li>
+							<li><a href={`/blog/${post.id}`}>{post.data.title}</a></li>
 						))}
 					</ul>
 				</nav>

@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.2.6",
-    "astro": "^5.12.9"
+    "@lucide/astro": "^1.70.0",
+    "astro": "^5.12.9",
+    "simple-icons": "^16.37.0"
   }
 }
