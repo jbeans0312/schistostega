@@ -88,11 +88,22 @@ const posts = (await getCollection('blog')).sort(
 		border-left: 1px solid var(--text-color);
 		padding-left: 1rem;
 	}
-	.blog-sidebar-image {
-		display: block;
-		width: 100%;
-		height: auto;
-		margin-bottom: 1rem;
+	.blog-sidebar-fox-link {
+		display: flex;
+		min-height: 7rem;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2.5rem;
+		font-family: 'Chapbook';
+		font-size: 6rem;
+		line-height: 1;
+		color: var(--text-color);
+		text-decoration: none;
+		transition: color 180ms ease;
+	}
+	.blog-sidebar-fox-link:hover,
+	.blog-sidebar-fox-link:focus-visible {
+		color: var(--highlight-color);
 	}
 	.sidebar-heading {
 		display: flex;
@@ -100,7 +111,7 @@ const posts = (await getCollection('blog')).sort(
 		gap: 0.5rem;
 	}
 	.sidebar-heading span {
-		font-family: Chapbook;
+		font-family: 'Chapbook';
 		color: var(--text-color);
 	}
 	.sidebar-heading h2 {
@@ -126,7 +137,7 @@ const posts = (await getCollection('blog')).sort(
 </style>
 <html lang="en">
 	<Head title="blog"></Head>
-	<body>
+	<body id="top">
 		<Headline title={"SCHISTOSTEGA"}></Headline>
 		<SmallNavigation page="blog" showBack={false} showHome showContact></SmallNavigation>
 		<div class="blog-page-layout">
@@ -150,7 +161,9 @@ const posts = (await getCollection('blog')).sort(
 				}
 			</ContentWrapper>
 			<aside class="blog-sidebar" aria-label="Blog sidebar">
-				<img class="blog-sidebar-image" src="/schistostega-fox.webp" alt="" />
+				<a class="blog-sidebar-fox-link" href="#top" aria-label="Back to top">
+					<span aria-hidden="true">N</span>
+				</a>
 				<nav aria-label="Blog posts">
 					<div class="sidebar-heading"><span>a</span><h2>Posts</h2></div>
 					<ul>
