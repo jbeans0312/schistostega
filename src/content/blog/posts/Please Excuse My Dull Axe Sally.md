@@ -10,14 +10,17 @@ thumbnail-src: "Arabesque with Knight"
 
 In most d20 fantasy games the players start each round with fixed capabilities. The conversation for a typical round might look like:
 
-**(1) Players describe their intent.**
-*P: I want to put my spear in the crocodile's jaws to stop it from biting.*
+1. **Players describe their intent.**
+    
+    *P: I want to put my spear in the crocodile's jaws to stop it from biting.*
 
-**(2) GM & players discuss how their abilities map to mechanics that affect the combat.**
-*GM: That could work. For your action, make a dexterity save to wedge the spear in there, the next time it tries to bite it will break your spear and it'll take some damage.*
+2. **GM & players discuss how their abilities map to mechanics that affect the combat.**
 
-**(3) Uncertain actions are resolved using the game's resolution mechanic.**
-*P: I rolled an 8, that's under my dex, so I jam the spear into its jaws. It flexes a little as the croc tries to bite down .*
+    *GM: That could work. For your action, make a dexterity save to wedge the spear in there, the next time it tries to bite it will break your spear and it'll take some damage.*
+
+3. **Uncertain actions are resolved using the game's resolution mechanic.**
+
+    *P: I rolled an 8, that's under my dex, so I jam the spear into its jaws. It flexes a little as the croc tries to bite down .*
 
 In M.B. the players don't know their character's round to round capabilities until attack dice are rolled, since gambits cover most combat actions outside of "I swing my sword". Players can only plan their round in terms of who's targeting whom. The round starting question shifts from "what do you want to do" to "who is everyone targeting"?
 
