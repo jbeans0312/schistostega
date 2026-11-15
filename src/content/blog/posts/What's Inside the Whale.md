@@ -13,7 +13,7 @@ Prepping for Mythic Bastionland[^1] was an absolute joy. The spark table and foo
 A beached beast lays on the shore only at low tide. Part whale & squid. Alien smoothness. Cutting it open reveals **The Gut Seer (5,4)**. The beast is swept away by high tide and returns healed the next day.
 
 ---
-I didn't think it necessary to describe what the cove looked like in my notes, but I imagined it as a teardrop shaped hidden beach, carved from the cliff by the sea. A slippery set of worn steps leads down inside. An important detail I thought of during play was rusty red sand and water to hint at the blood affair to come. Maybe I could have described blood on the walls, but I think that would make the cove feel too hostile. Remember, the sign says **tranquil**.
+I didn't think it necessary to describe what the cove looked like in my notes, but I imagined it as a teardrop shaped hidden beach, carved from the cliff by the sea. A slippery set of worn steps leads down inside. An important detail I thought of during play was rusty red sand and water to hint at the bloody affair to come. Maybe I could have described blood on the walls, but I think that would make the cove feel too hostile. Remember, the sign says **tranquil**.
 # Actually cutting it open
 My company's encounter with this seer was certainly the session highlight. Just before entering the cove they had met a woman recently stripped of her knighthood by **The Judge**. Since the company was visiting the seer anyway, they agreed to assist in a re-knighting quest should the seer entertain the idea.
 

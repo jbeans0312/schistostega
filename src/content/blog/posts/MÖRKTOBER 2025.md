@@ -43,9 +43,9 @@ IN TIME, YOU WILL BE WHOLE AGAIN. As a husk, your DM will roll on the PIECES OF 
 ---
 # 10-5, STAIN
 *Trap*
-### **MIRICENT'S STAINED GLASS**
+**MIRICENT'S STAINED GLASS**
 
-### AN INTRICATE PANE of stained glass impends upon the pews below. Rays of light of every color emanate from its surface, painting the church in hues not seen for generations; although, no sunlight passes through the window. The congregation kneels before the pane, their hands stretching towards the portal as if they were trying to grasp the light itself. The pastor, a withered man engulfed in the backlight leads the knelt in prayer:
+*AN INTRICATE PANE of stained glass impends upon the pews below. Rays of light of every color emanate from its surface, painting the church in hues not seen for generations; although, no sunlight passes through the window. The congregation kneels before the pane, their hands stretching towards the portal as if they were trying to grasp the light itself. The pastor, a withered man engulfed in the backlight leads the knelt in prayer:*
 
 *PRAISE MIRICENT for his gentling! PRAISE!*
 
@@ -59,7 +59,7 @@ IN TIME, YOU WILL BE WHOLE AGAIN. As a husk, your DM will roll on the PIECES OF 
 
 *AND BY HIS WILL that my blood flows! BY HIS WILL!*
 
-### You can't help but to gaze upon it, maybe there's something you're not seeing...
+**You can't help but to gaze upon it, maybe there's something you're not seeing...**
 
 For each round spent gazing upon the glass, gain HP then make a Presence test or fall to your knees and join the congregation, embracing MIRICENT's warmth. Each round spent staring grants you more HP and increases the Presence test DR. Repeat Presence test each dawn to awake to dark reality.
 
@@ -69,12 +69,12 @@ For each round spent gazing upon the glass, gain HP then make a Presence test or
 
 A PROPHESYING WIND HOWLS along the Whispering Coast down to the Dahlmore Mountains. 
 
-# " 
+## " 
 ## THE SHADOW PRINCE takes his watch atop a lonely tower 
 ## HIS FATHER ROTS upon his throne, nigh his final hour
 ## HE HOWLS TO the sea, his fingers rake the sky
 ## MY BOY SHALL never rule, for I shall never die!
-# "
+## "
 ---
 # 10-3, DAGGERS
 *Power*

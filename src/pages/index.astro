@@ -2,29 +2,216 @@
 import '../styles/global.css'
 import Head from '../components/Head.astro';
 import Headline from '../components/Headline.astro';
-import Navigation from '../components/Navigation.astro';
+import ContentWrapper from '../components/ContentWrapper.astro';
+import SmallNavigation from '../components/SmallNavigation.astro';
+import { getCollection } from 'astro:content';
+
+const thumbnails = import.meta.glob<string>(
+	'../content/blog/images/thumbnails/final/*.webp',
+	{ eager: true, query: '?url', import: 'default' }
+);
+const thumbnailByName = Object.fromEntries(
+	Object.entries(thumbnails).map(([path, url]) => [path.split('/').pop(), url])
+);
+const fallbackThumbnail = thumbnailByName['goblin-lanterns-helen-hyde-1906.webp'];
+const posts = (await getCollection('blog')).sort((first, second) => {
+	const firstDate = first.data.updated_date ?? first.data.published_date;
+	const secondDate = second.data.updated_date ?? second.data.published_date;
+	return secondDate.valueOf() - firstDate.valueOf();
+});
+const latestPost = posts[0];
 ---
 <style>
-	div {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		min-height: 100vh;
+	h1 {
+		margin: 0 0 5px;
 	}
-	p {
+	.home-page-layout {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) 14rem;
+		gap: 2rem;
+		row-gap: 0.75rem;
+		align-items: start;
+		max-width: 1100px;
+		margin: 0 auto;
+		padding-inline: 1rem;
+	}
+	.home-page-header {
+		grid-column: 1;
+		grid-row: 1;
+		container-type: inline-size;
+	}
+	.home-page-header :global(#headline) {
+		text-align: left;
+	}
+	.home-page-header :global(#headline h1) {
+		font-size: 12.8cqw;
+	}
+	.home-page-header :global(.home-page-navigation) {
+		justify-content: flex-start;
+	}
+	.home-page-layout > :global(.home-main) {
+		grid-column: 1;
+		grid-row: 2;
+		align-self: stretch;
+	}
+	.home-bio {
+		margin-bottom: 1.5rem;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid var(--text-color);
+	}
+	.home-bio h2,
+	.latest-post-heading {
+		margin: 0 0 0.5rem;
 		font-family: 'Maname';
-		text-align: center;
-		padding-top: 1px;
-		padding-bottom: 1px;
+		font-size: 1.5rem;
+	}
+	.home-bio p {
+		margin: 0;
+	}
+	.blog-entry {
+		margin-bottom: 2rem;
+		padding-top: 0.75rem;
+	}
+	.blog-thumbnail-link {
+		display: block;
+		width: 100%;
+		aspect-ratio: 4 / 1;
+		overflow: hidden;
+		margin-bottom: 0.75rem;
+		position: relative;
+		isolation: isolate;
+	}
+	.blog-thumbnail-link::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-color: color-mix(in srgb, var(--highlight-color) 70%, transparent);
+		mix-blend-mode: color;
+		opacity: 0;
+		transition: opacity 180ms ease;
+		pointer-events: none;
+	}
+	.blog-thumbnail {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.blog-thumbnail-link:hover::after,
+	.blog-thumbnail-link:focus-visible::after {
+		opacity: 1;
+	}
+	.blog-sidebar {
+		grid-column: 2;
+		grid-row: 2;
+		position: sticky;
+		top: 1rem;
+		min-width: 0;
+		border-left: 1px solid var(--text-color);
+		padding-left: 1rem;
+	}
+	.blog-sidebar-fox-link {
+		display: flex;
+		min-height: 7rem;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2.5rem;
+		font-family: 'Chapbook';
+		font-size: 6rem;
+		line-height: 1;
+		color: var(--text-color);
+		text-decoration: none;
+		transition: color 180ms ease;
+	}
+	.blog-sidebar-fox-link:hover,
+	.blog-sidebar-fox-link:focus-visible {
+		color: var(--highlight-color);
+	}
+	.sidebar-heading {
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+	.sidebar-heading span {
+		font-family: 'Chapbook';
+		color: var(--text-color);
+	}
+	.sidebar-heading h2 {
+		margin: 0;
+		font-size: 1.1rem;
+		font-family: 'Maname';
+	}
+	.blog-sidebar ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	.blog-sidebar li {
+		margin-block: 0.5rem;
+	}
+	@media (max-width: 800px) {
+		.home-page-layout {
+			grid-template-columns: minmax(0, 1fr);
+			padding-inline: 0.5rem;
+		}
+		.blog-sidebar {
+			display: none;
+		}
 	}
 </style>
 
 <html lang="en">
-	<Head></Head>
-	<body>
-		<div>
-			<Headline subtitle='a collection of ttrpg oddities by john bean'></Headline>
-			<Navigation></Navigation>
+	<Head title="home"></Head>
+	<body id="top">
+		<div class="home-page-layout">
+			<div class="home-page-header">
+				<Headline></Headline>
+				<SmallNavigation page="home" showBlog showContact showHome showBack={false} class="home-page-navigation"></SmallNavigation>
+			</div>
+			<ContentWrapper class="post-main home-main">
+				<section class="home-bio">
+					<h2>About</h2>
+					<p>Hi, I'm John Bean. I'm based in Harrisburg, PA. My interests are tabletop role-playing games, professional wrestling, homekeeping, and organization broadly. <a href="/schistostega.webp" target="_blank" rel="noopener noreferrer">Schistostega</a> is my fantasy & ttrpg blog.</p>
+				</section>
+				<section aria-labelledby="latest-post-heading">
+					<h2 class="latest-post-heading" id="latest-post-heading">Latest Post</h2>
+					{latestPost && (
+						<div class="blog-entry" id={latestPost.id}>
+							<a class="blog-thumbnail-link" href={`/blog/${latestPost.id}`} aria-label={`Read ${latestPost.data.title}`}>
+								<img
+									class="blog-thumbnail"
+									src={thumbnailByName[latestPost.data.thumbnail ?? ''] ?? fallbackThumbnail}
+									alt=""
+									loading="lazy"
+								/>
+							</a>
+							<h1><a id="nav" href={`/blog/${latestPost.id}`}>{latestPost.data.title}</a></h1>
+							<strong id="blog-date">{latestPost.data.updated_date ? latestPost.data.updated_date.toLocaleDateString() : latestPost.data.published_date.toLocaleDateString()}</strong>
+							<p id="blog-desc">{latestPost.data.description}</p>
+						</div>
+					)}
+				</section>
+			</ContentWrapper>
+			<aside class="blog-sidebar" aria-label="Blog sidebar">
+				<a class="blog-sidebar-fox-link" href="#top" aria-label="Back to top">
+					<span aria-hidden="true">N</span>
+				</a>
+				<nav aria-label="Blog posts">
+					<ul>
+						<li>
+							<div class="sidebar-heading"><span>i</span><h2>Currently Running</h2></div>
+							<p><a href="https://chrismcdee.itch.io/mythic-bastionland">Mythic Bastionland</a></p>
+						</li>
+						<li>
+							<div class="sidebar-heading"><span>g</span><h2>Currently Playing</h2></div>
+							<p><a href="https://necroticgnome.com/collections/dolmenwood">Dolmenwood</a></p>
+						</li>
+						<li>
+							<div class="sidebar-heading"><span>J</span><h2>Currently Listening To</h2></div>
+							<p><a href="https://youtube.com/playlist?list=OLAK5uy_lpcNnvbgaJJjH9NQ5OiCOFsuaZhyBlyW0&si=ZmXQVtYshyNZlq5Z">Frailty (Deluxe)</a></p>
+						</li>
+					</ul>
+				</nav>
+			</aside>
 		</div>
 	</body>
 </html>

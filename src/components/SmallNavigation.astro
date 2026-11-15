@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css'
 
-const {showBack=true, showHome=false, showBlog=false, showContact=false, page} = Astro.props;
+const {showBack=true, showHome=false, showBlog=false, showContact=false, page, class: className} = Astro.props;
+const isPostSidebarNavigation = className === 'post-sidebar-navigation';
 
 const backLinkMap = new Map<string, string>();
 backLinkMap.set("blog", "../");
@@ -16,13 +17,14 @@ backLinkMap.set("b-post", "../");
         align-items: center;
         justify-content: center;
         max-height:min-content;
-        margin-top: 0em;
+        margin-top: 0.75rem;
         padding-top: 0px;
         flex-wrap: wrap;
     }
     h1, h3 {
         min-width: 25px;
         text-align: center;
+        margin-block: 0;
     }
 </style>
 <div>

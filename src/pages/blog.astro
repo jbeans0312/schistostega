@@ -76,12 +76,33 @@ const posts = (await getCollection('blog')).sort(
 		display: grid;
 		grid-template-columns: minmax(0, 1fr) 14rem;
 		gap: 2rem;
+		row-gap: 0.75rem;
 		align-items: start;
 		max-width: 1100px;
 		margin: 0 auto;
 		padding-inline: 1rem;
 	}
+	.blog-page-header {
+		grid-column: 1;
+		grid-row: 1;
+		container-type: inline-size;
+	}
+	.blog-page-header :global(#headline) {
+		text-align: left;
+	}
+	.blog-page-header :global(#headline h1) {
+		font-size: 12.8cqw;
+	}
+	.blog-page-header :global(.blog-page-navigation) {
+		justify-content: flex-start;
+	}
+	.blog-page-layout > :global(.post-main) {
+		grid-column: 1;
+		grid-row: 2;
+	}
 	.blog-sidebar {
+		grid-column: 2;
+		grid-row: 2;
 		position: sticky;
 		top: 1rem;
 		min-width: 0;
@@ -138,9 +159,11 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<Head title="blog"></Head>
 	<body id="top">
-		<Headline title={"SCHISTOSTEGA"}></Headline>
-		<SmallNavigation page="blog" showBack={false} showHome showContact></SmallNavigation>
 		<div class="blog-page-layout">
+			<div class="blog-page-header">
+				<Headline title={"SCHISTOSTEGA"}></Headline>
+				<SmallNavigation page="blog" showBlog showBack={false} showHome showContact class="blog-page-navigation"></SmallNavigation>
+			</div>
 			<ContentWrapper class="post-main">
 				{
 					posts.map(post => (
